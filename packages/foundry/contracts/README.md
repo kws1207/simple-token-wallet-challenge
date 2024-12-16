@@ -84,3 +84,18 @@ The design allows users to:
     event EthDeposit(address indexed user, uint256 amount);
     event EthWithdrawal(address indexed user, uint256 amount);
     ```
+
+## Testing
+
+To ensure the contract functions as expected, tests have been written and can be found in the `YourContract.t.sol` file. These tests cover scenarios including:
+
+- Token and Ether deposits and withdrawals.
+- Balance tracking for multiple users.
+- Security checks against reentrancy attacks.
+- Event emissions for all transactions.
+
+To run the tests, execute the following command:
+```bash
+cd packages/foundry
+forge test
+```
